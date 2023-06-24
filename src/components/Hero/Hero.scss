@@ -1,0 +1,67 @@
+.hero-container {
+    display: flex;
+    gap: 50px;
+
+    .hero-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem 4rem;
+        .hero-title {
+            margin: 0;
+            // width: 80%;
+            font-family: "Rubik";
+            font-size: 48px;
+            font-weight: 600;
+            color: hsl(229, 31%, 21%);
+        }
+        
+        .hero-desc {
+            // width: 80%;
+            font-family: "Rubik";
+            font-size: 18px;
+            font-weight: 500;
+            color: hsl(229, 8%, 60%);
+        }
+        
+        .btn-grp{
+            display: flex;
+            gap: 32px;
+            
+            .btn{
+                padding: 0.9rem 1.8rem;
+                border: none;
+                outline: none;
+
+                font-family: "Rubik";
+                font-size: 16px;
+                font-weight: 800;
+                color: hsl(229, 31%, 21%);
+                border-radius: 3px;
+                transition: 0.1s all ease-in-out;
+                &:hover{
+                    outline: 2px solid hsl(229, 31%, 21%);
+                    background-color: #fff;
+                    color: hsl(229, 31%, 21%);
+                }
+            }
+            .active{
+                background-color: hsl(231, 69%, 60%);
+                color: #fff;
+                &:hover{
+                    outline: 2px solid hsl(231, 69%, 60%);
+                    background-color: #fff;
+                    color: hsl(231, 69%, 60%);
+                }
+            }
+        }
+    }
+
+    .hero-right {
+        flex: 1;
+
+    }
+}
