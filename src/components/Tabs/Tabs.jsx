@@ -1,4 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import "./Tabs.scss";
+
 import Tab1 from "../../assets/images/illustration-features-tab-1.svg" 
 import Tab2 from "../../assets/images/illustration-features-tab-2.svg" 
 import Tab3 from "../../assets/images/illustration-features-tab-3.svg" 
@@ -24,21 +26,21 @@ const Tabs = () => {
         },
     ]
   return (
-    <div>
-        <h4> Features</h4>
-        <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+    <div className='tabs-container'>
+        <h4 className='tabs-title'> Features</h4>
+        <p className='tabs-desc'>Our aim is to make it quick and easy for you to access your favourite websites. 
   Your bookmarks sync between your devices so you can access them on the go.</p>
-        <div>
-            <button className='btn-tab' onClick={setActive(0)}>Simple Bookmarking</button>
-            <button className='btn-tab' onClick={setActive(1)}> Speedy Searching</button>
-            <button className='btn-tab' onClick={setActive(2)}>Easy Sharing</button>
+        <div className='btn-tab-grp'>
+            <button className='btn-tab active' onClick={() => setActive(0)} >Simple Bookmarking</button>
+            <button className='btn-tab' onClick={() => setActive(1)} > Speedy Searching</button>
+            <button className='btn-tab' onClick={() => setActive(2)} >Easy Sharing</button>
         </div>
-        <div>
+        <div className='tabs-conttent'>
             <img src={tabs[active].img} alt="Tabs Image" className='tabs-img' />
-            <div>
-                <h4>tabs[active].title</h4>
-                <p>tabs[active].desc</p>
-                <button>More Info</button>
+            <div className='tabs-content-container'>
+                <h4 className='tabs-content-title'>{tabs[active].title}</h4>
+                <p className='tabs-content-desc'>{tabs[active].desc}</p>
+                <button className='btn-more-info'>More Info</button>
             </div>
         </div>
     </div>

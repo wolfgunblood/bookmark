@@ -1,0 +1,56 @@
+.tabs-container{
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+    .tabs-title{
+        margin: 0;
+        // width: 80%;
+        font-family: "Rubik", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        color: hsl(229, 31%, 21%);
+    }
+    .tabs-desc{
+        margin: 0;
+        width: 70%;
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+    }
+
+    .btn-tab-grp{
+        display: flex;
+        gap: 24px;
+        .btn-tab{
+            padding: 0.8rem 2rem;
+            background-color: transparent;
+            color: hsl(229, 8%, 60%);
+            
+            font-family: "Rubik", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            border: none;
+            outline: none;
+            
+            // border-radius: 7px;
+
+            &:hover{
+                color: hsl(0, 94%, 66%);
+            }
+        }
+        .active{
+            border-bottom: 3px solid hsl(0, 94%, 66%);
+
+        }
+    }
+
+    .tabs-conttent{
+        display: flex;
+        gap: 58px;
+    }
+}
