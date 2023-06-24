@@ -1,0 +1,82 @@
+.faqs-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+
+    .faqs-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .faqs-title {
+            margin: 0;
+            // width: 80%;
+            font-family: "Rubik", sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: hsl(229, 31%, 21%);
+
+        }
+
+        .faqs-subtitle {
+            width: 70%;
+            line-height: 1.5;
+            margin: 0;
+            width: 70%;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: hsl(229, 8%, 60%);
+            text-align: center;
+        }
+    }
+
+    .faqs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 550px;
+        max-width: 550px;
+
+        .faq-item {
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid hsla(229, 8%, 60%, 50%);
+            border-top: 1px solid hsla(229, 8%, 60%, 50%);
+
+            .faq-question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                .faq-question-title {
+                    margin: 15px 0;
+                    color: hsl(229, 31%, 21%);
+                    font-family: "Rubik", sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            .faq-answer {
+
+                .faq-answer-text {
+                    margin: 0;
+                    color: hsl(229, 8%, 60%);
+                    font-family: "Rubik", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.1em;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@ import Tabs from './components/Tabs/Tabs';
 import Extension from './components/Extensions/Extension';
 import Footer from './components/Footer/Footer';
 import CTA from './components/CTA/CTA.JSX';
+import Faq from './components/Faq/Faq';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Hero />
         <Tabs />
         <Extension />
+        <Faq />
       </div>
       <div className='app-bottom'>
         <CTA />
