@@ -30,7 +30,14 @@
                 border: none;
                 outline: none;
                 
-                border-radius: 7px
+                border-radius: 7px;
+                cursor: pointer;
+
+                &:hover{
+                    outline: 2px solid hsl(0, 94%, 66%);
+                    background-color: #fff;
+                    color: hsl(0, 94%, 66%);
+                }
             }
         }
     }
