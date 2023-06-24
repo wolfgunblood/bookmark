@@ -3,6 +3,7 @@ import "./Extension.scss";
 import Chrome from "../../assets/images/logo-chrome.svg"
 import Firefox from "../../assets/images/logo-firefox.svg"
 import Opera from "../../assets/images/logo-opera.svg"
+import Dots from "../../assets/images/bg-dots.svg"
 
 const Extension = () => {
 
@@ -38,6 +39,7 @@ const Extension = () => {
                             <div className='extension-list-item-info'>
                                 <p className='extension-list-item-name'>{"Add to " + item.name}</p>
                                 <p className='extension-list-item-version'>{"Minimum version " + item.version}</p>
+                                <img src={Dots} alt="Dots" />
                                 <button className='extension-list-item-button'>Add & Install Extensiona</button>
                             </div>
                         </div>

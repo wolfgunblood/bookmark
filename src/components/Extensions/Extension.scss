@@ -48,46 +48,53 @@
             justify-content: center;
             gap: 16px;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
             .extension-list-item-info {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 12px;
+                gap: 16px;
 
-                .extension-list-item-name{
+                .extension-list-item-name {
                     margin: 0;
                     color: hsl(229, 31%, 21%);
                     font-family: "Rubik", sans-serif;
                     font-size: 24px;
                     font-weight: 600;
                 }
-                
-                .extension-list-item-version{
+
+                .extension-list-item-version {
                     margin: 0;
                     color: hsl(229, 8%, 60%);
                     font-family: "Rubik", sans-serif;
                     font-size: 14px;
                     font-weight: 400;
                     letter-spacing: 0.1em;
-                   
-                    
+
+
                 }
 
-                .extension-list-item-button{
+                .extension-list-item-button {
+                    width: 100%;
                     padding: 0.8rem 1rem;
-                background-color: hsl(231, 69%, 60%);
-                color: #fff;
+                    background-color: hsl(231, 69%, 60%);
+                    color: #fff;
 
-                font-family: "Rubik", sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-                letter-spacing: 0.1em;
-                border: none;
-                outline: none;
-                cursor: pointer;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
 
-                border-radius: 7px
+                    border-radius: 7px;
+                    &:hover{
+                        outline: 2px solid hsl(231, 69%, 60%);
+                        background-color: #fff;
+                        color: hsl(231, 69%, 60%);
+                    }
                 }
             }
         }
