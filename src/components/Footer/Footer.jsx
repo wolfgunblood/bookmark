@@ -12,7 +12,7 @@ const Footer = () => {
                 <li className='footer-item'>PRICING</li>
                 <li className='footer-item'>CONTACT</li>
             </ul>
-            <div>
+            <div className='footer-social'>
                 <img src={Twitter} alt="Twiiter" />
                 <img src={Facebbok} alt="Facebbok" />
 
